@@ -1,0 +1,93 @@
+div.firstLine {
+    font-size: 18px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    margin-top: 200px;
+
+}
+
+.secondLine {
+    font-size: 20px;
+}
+
+.image {
+    height: 400px;
+    width: 450px;
+}
+.rightPortion{
+    gap:20px;
+}
+
+.grid-container>div {
+    padding: 20px 70px;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+img#loader {
+    position: absolute;
+    top: 46%;
+    left: 47%;
+    transform: translate(50%, 50%);
+}
+
+#button {
+    font-size: 12px;
+    padding: 8px 106px;
+    border: none;
+    color: rgb(241, 244, 229);
+    font-weight: bold;
+    /* cursor: pointer; */
+}
+
+#loader {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loaderUpdate {
+    animation: spin 2s linear infinite;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+#uploadFile {
+    position: absolute;
+    bottom: 40px;
+    left: 198px;
+    border: none;
+}
